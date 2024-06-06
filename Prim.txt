@@ -1,0 +1,15 @@
+COM 
+	T <--- vacio; /Inicializamos el conjunto de aristas T como vacío
+	U <--- {1};  // Inicializamos el conjunto de vértices U con el vertice 1
+	V <---- [V1,.... Vn]
+	
+	Mientras V no vacio Hacer
+	
+		A <--- buscarMin(U,V)
+		V.eliminar(A.desitno())
+		U.agregar(A.destino())
+		T.agregar(A)
+
+	Fin Mientras
+	Devolver T
+Fin
